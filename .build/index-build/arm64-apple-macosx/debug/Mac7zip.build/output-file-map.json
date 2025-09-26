@@ -1,0 +1,243 @@
+{
+  "": {
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/master.swiftdeps"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/AboutView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AboutView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AboutView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AboutView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AboutView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AboutView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/AdaptiveAdvancedOptionsView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdaptiveAdvancedOptionsView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdaptiveAdvancedOptionsView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdaptiveAdvancedOptionsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdaptiveAdvancedOptionsView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdaptiveAdvancedOptionsView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/AddFilesView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AddFilesView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AddFilesView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AddFilesView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AddFilesView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AddFilesView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/AdvancedOptionsView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdvancedOptionsView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdvancedOptionsView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdvancedOptionsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdvancedOptionsView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdvancedOptionsView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/AppleArchiveEngine.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AppleArchiveEngine.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AppleArchiveEngine.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AppleArchiveEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AppleArchiveEngine.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AppleArchiveEngine.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/ArchiveEngine.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveEngine.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveEngine.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveEngine.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveEngine.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/ArchiveTreeItem.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveTreeItem.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveTreeItem.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveTreeItem~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveTreeItem.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveTreeItem.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/BenchmarkView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/BenchmarkView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/BenchmarkView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/BenchmarkView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/BenchmarkView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/BenchmarkView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/CompressionMethods.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethods.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethods.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethods~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethods.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethods.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/CompressionMethodsView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethodsView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethodsView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethodsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethodsView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethodsView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/ContentView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ContentView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ContentView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ContentView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/ErrorManager.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ErrorManager.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ErrorManager.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ErrorManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ErrorManager.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ErrorManager.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/ExtractView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ExtractView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ExtractView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ExtractView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ExtractView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ExtractView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/FileListView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileListView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileListView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileListView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileListView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileListView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/FileRowView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileRowView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileRowView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileRowView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileRowView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileRowView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/FilterManager.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterManager.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterManager.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterManager.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterManager.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/FilterOptionsView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterOptionsView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterOptionsView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterOptionsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterOptionsView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterOptionsView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/FormatOptions.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FormatOptions.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FormatOptions.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FormatOptions~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FormatOptions.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FormatOptions.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/LocalizationManager.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LocalizationManager.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LocalizationManager.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LocalizationManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LocalizationManager.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LocalizationManager.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/LogManager.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LogManager.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LogManager.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LogManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LogManager.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LogManager.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/Mac7zipApp.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Mac7zipApp.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Mac7zipApp.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Mac7zipApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Mac7zipApp.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Mac7zipApp.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/NewArchiveView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NewArchiveView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NewArchiveView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NewArchiveView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NewArchiveView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NewArchiveView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/NotificationManager.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NotificationManager.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NotificationManager.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NotificationManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NotificationManager.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NotificationManager.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/PreferencesView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PreferencesView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PreferencesView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PreferencesView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PreferencesView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PreferencesView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/ProgressTracker.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ProgressTracker.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ProgressTracker.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ProgressTracker~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ProgressTracker.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ProgressTracker.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/PropertiesView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PropertiesView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PropertiesView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PropertiesView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PropertiesView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PropertiesView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/RarOptionsView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/RarOptionsView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/RarOptionsView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/RarOptionsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/RarOptionsView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/RarOptionsView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/SecurityOptionsView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/SecurityOptionsView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/SecurityOptionsView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/SecurityOptionsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/SecurityOptionsView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/SecurityOptionsView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/ThemeManager.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ThemeManager.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ThemeManager.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ThemeManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ThemeManager.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ThemeManager.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/UTTypeExtensions.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/UTTypeExtensions.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/UTTypeExtensions.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/UTTypeExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/UTTypeExtensions.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/UTTypeExtensions.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/VolumeManager.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeManager.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeManager.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeManager.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeManager.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/VolumeOptionsView.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeOptionsView.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeOptionsView.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeOptionsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeOptionsView.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeOptionsView.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/WindowManager.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/WindowManager.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/WindowManager.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/WindowManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/WindowManager.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/WindowManager.dia"
+  },
+  "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/resource_bundle_accessor.d",
+    "object": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/resource_bundle_accessor.dia"
+  }
+}

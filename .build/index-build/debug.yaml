@@ -1,0 +1,70 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "Mac7zip-arm64-apple-macosx26.0-debug.module": ["<Mac7zip-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<Mac7zip-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<Mac7zip-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/chris/Documents/Projet/MACZIP/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/chris/Documents/Projet/MACZIP/AboutView.swift","/Users/chris/Documents/Projet/MACZIP/AdaptiveAdvancedOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/AddFilesView.swift","/Users/chris/Documents/Projet/MACZIP/AdvancedOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/AppleArchiveEngine.swift","/Users/chris/Documents/Projet/MACZIP/ArchiveEngine.swift","/Users/chris/Documents/Projet/MACZIP/ArchiveTreeItem.swift","/Users/chris/Documents/Projet/MACZIP/BenchmarkView.swift","/Users/chris/Documents/Projet/MACZIP/CompressionMethods.swift","/Users/chris/Documents/Projet/MACZIP/CompressionMethodsView.swift","/Users/chris/Documents/Projet/MACZIP/ContentView.swift","/Users/chris/Documents/Projet/MACZIP/ErrorManager.swift","/Users/chris/Documents/Projet/MACZIP/ExtractView.swift","/Users/chris/Documents/Projet/MACZIP/FileListView.swift","/Users/chris/Documents/Projet/MACZIP/FileRowView.swift","/Users/chris/Documents/Projet/MACZIP/FilterManager.swift","/Users/chris/Documents/Projet/MACZIP/FilterOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/FormatOptions.swift","/Users/chris/Documents/Projet/MACZIP/LocalizationManager.swift","/Users/chris/Documents/Projet/MACZIP/LogManager.swift","/Users/chris/Documents/Projet/MACZIP/Mac7zipApp.swift","/Users/chris/Documents/Projet/MACZIP/NewArchiveView.swift","/Users/chris/Documents/Projet/MACZIP/NotificationManager.swift","/Users/chris/Documents/Projet/MACZIP/PreferencesView.swift","/Users/chris/Documents/Projet/MACZIP/ProgressTracker.swift","/Users/chris/Documents/Projet/MACZIP/PropertiesView.swift","/Users/chris/Documents/Projet/MACZIP/RarOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/SecurityOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/ThemeManager.swift","/Users/chris/Documents/Projet/MACZIP/UTTypeExtensions.swift","/Users/chris/Documents/Projet/MACZIP/VolumeManager.swift","/Users/chris/Documents/Projet/MACZIP/VolumeOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/WindowManager.swift","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/DerivedSources/resource_bundle_accessor.swift"]
+    outputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources"]
+    description: "Write auxiliary file /Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources"
+
+  "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/Info.plist":
+    tool: copy-tool
+    inputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Info.plist"]
+    outputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/Info.plist"]
+    description: "Copying /Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Info.plist"
+
+  "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/en.lproj/Localizable.strings":
+    tool: copy-tool
+    inputs: ["/Users/chris/Documents/Projet/MACZIP/Localizations/en.lproj/Localizable.strings"]
+    outputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/en.lproj/Localizable.strings"]
+    description: "Copying /Users/chris/Documents/Projet/MACZIP/Localizations/en.lproj/Localizable.strings"
+
+  "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/fr.lproj/Localizable.strings":
+    tool: copy-tool
+    inputs: ["/Users/chris/Documents/Projet/MACZIP/Localizations/fr.lproj/Localizable.strings"]
+    outputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/fr.lproj/Localizable.strings"]
+    description: "Copying /Users/chris/Documents/Projet/MACZIP/Localizations/fr.lproj/Localizable.strings"
+
+  "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<Mac7zip-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Modules/Mac7zip.swiftmodule"]
+    outputs: ["<Mac7zip-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.Mac7zip-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/chris/Documents/Projet/MACZIP/AboutView.swift","/Users/chris/Documents/Projet/MACZIP/AdaptiveAdvancedOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/AddFilesView.swift","/Users/chris/Documents/Projet/MACZIP/AdvancedOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/AppleArchiveEngine.swift","/Users/chris/Documents/Projet/MACZIP/ArchiveEngine.swift","/Users/chris/Documents/Projet/MACZIP/ArchiveTreeItem.swift","/Users/chris/Documents/Projet/MACZIP/BenchmarkView.swift","/Users/chris/Documents/Projet/MACZIP/CompressionMethods.swift","/Users/chris/Documents/Projet/MACZIP/CompressionMethodsView.swift","/Users/chris/Documents/Projet/MACZIP/ContentView.swift","/Users/chris/Documents/Projet/MACZIP/ErrorManager.swift","/Users/chris/Documents/Projet/MACZIP/ExtractView.swift","/Users/chris/Documents/Projet/MACZIP/FileListView.swift","/Users/chris/Documents/Projet/MACZIP/FileRowView.swift","/Users/chris/Documents/Projet/MACZIP/FilterManager.swift","/Users/chris/Documents/Projet/MACZIP/FilterOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/FormatOptions.swift","/Users/chris/Documents/Projet/MACZIP/LocalizationManager.swift","/Users/chris/Documents/Projet/MACZIP/LogManager.swift","/Users/chris/Documents/Projet/MACZIP/Mac7zipApp.swift","/Users/chris/Documents/Projet/MACZIP/NewArchiveView.swift","/Users/chris/Documents/Projet/MACZIP/NotificationManager.swift","/Users/chris/Documents/Projet/MACZIP/PreferencesView.swift","/Users/chris/Documents/Projet/MACZIP/ProgressTracker.swift","/Users/chris/Documents/Projet/MACZIP/PropertiesView.swift","/Users/chris/Documents/Projet/MACZIP/RarOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/SecurityOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/ThemeManager.swift","/Users/chris/Documents/Projet/MACZIP/UTTypeExtensions.swift","/Users/chris/Documents/Projet/MACZIP/VolumeManager.swift","/Users/chris/Documents/Projet/MACZIP/VolumeOptionsView.swift","/Users/chris/Documents/Projet/MACZIP/WindowManager.swift","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/DerivedSources/resource_bundle_accessor.swift","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","<Mac7zip-arm64-apple-macosx26.0-debug.module-resources>","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources"]
+    outputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Modules/Mac7zip.swiftmodule"]
+    description: "Compiling Swift Module 'Mac7zip' (34 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","Mac7zip","-emit-dependencies","-emit-module","-emit-module-path","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Modules/Mac7zip.swiftmodule","-output-file-map","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/output-file-map.json","-incremental","@/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources","-I","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE","-module-cache-path","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","Mac7zip_main","-swift-version","5","-Xfrontend","-experimental-lazy-typecheck","-Xfrontend","-experimental-skip-all-function-bodies","-Xfrontend","-experimental-allow-module-with-compiler-errors","-Xfrontend","-empty-abi-descriptor","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","maczip"]
+
+  "Mac7zip-arm64-apple-macosx26.0-debug.module-resources":
+    tool: phony
+    inputs: ["/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/en.lproj/Localizable.strings","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/fr.lproj/Localizable.strings","/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/Info.plist"]
+    outputs: ["<Mac7zip-arm64-apple-macosx26.0-debug.module-resources>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/chris/Documents/Projet/MACZIP/","/Users/chris/Documents/Projet/MACZIP/Package.swift","/Users/chris/Documents/Projet/MACZIP/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

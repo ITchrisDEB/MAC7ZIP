@@ -1,0 +1,128 @@
+# Xcode
+.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+profile
+*.moved-aside
+DerivedData/
+.idea/
+*.hmap
+*.xccheckout
+*.xcworkspace
+!default.xcworkspace
+
+# Build products
+build/
+DerivedData/
+*.app
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Archives
+*.xcarchive
+
+# CocoaPods
+Pods/
+*.podspec
+
+# Carthage
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+iOSInjectionProject/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Test files
+test-files/
+test-extract/
+test.7z
+test.zip
+test.tar
+*.tmp
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+
+# Package files
+*.dmg
+*.zip
+*.pkg
+
+# Secrets and certificates
+*.p12
+*.cer
+*.pem
+*.mobileprovision
+*.entitlements
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+*.bak
+*.backup
+
+# Archive test files
+archive-test/
+extract-test/
+benchmark-test/
+interop-test/

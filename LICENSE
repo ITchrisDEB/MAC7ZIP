@@ -1,0 +1,58 @@
+MIT License
+
+Copyright (c) 2024 Mac7zip
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-Party Licenses
+
+### 7-Zip
+This software includes the 7-Zip binary, which is licensed under the GNU LGPL.
+Copyright (c) 1999-2025 Igor Pavlov.
+
+The 7-Zip binary is included for compatibility and functionality purposes.
+The source code of 7-Zip is available at: https://www.7-zip.org/
+
+### Swift and SwiftUI
+This software uses Swift and SwiftUI frameworks, which are licensed under the Apache License 2.0.
+Copyright (c) 2014-2024 Apple Inc.
+
+### macOS SDK
+This software uses the macOS SDK, which is licensed under the Apple Software License Agreement.
+Copyright (c) 2024 Apple Inc.
+
+## Disclaimer
+
+This software is provided "as is" without warranty of any kind. The authors and
+contributors are not responsible for any damages or issues that may arise from
+the use of this software.
+
+The 7-Zip binary included in this software is provided for convenience and
+compatibility. Users are responsible for ensuring compliance with the GNU LGPL
+license terms when using this software.
+
+## Trademarks
+
+7-Zip is a trademark of Igor Pavlov.
+macOS is a trademark of Apple Inc.
+Swift and SwiftUI are trademarks of Apple Inc.
+
+All other trademarks are the property of their respective owners.

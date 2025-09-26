@@ -1,0 +1,305 @@
+/* 
+  Localizable.strings
+  Mac7zip
+  
+  French localization
+*/
+
+// General
+"app_name" = "Mac7zip";
+"ok" = "OK";
+"cancel" = "Annuler";
+"save" = "Enregistrer";
+"delete" = "Supprimer";
+"open" = "Ouvrir";
+"close" = "Fermer";
+"new" = "Nouveau";
+"edit" = "Édition";
+"help" = "Aide";
+"about" = "À propos";
+"preferences" = "Préférences";
+"general" = "Général";
+"apply" = "Appliquer";
+"restore_defaults" = "Restaurer les valeurs par défaut";
+
+// Language Settings
+"language" = "Langue";
+"select_language" = "Sélectionner la langue";
+
+// Preferences Settings
+"show_notifications" = "Afficher les notifications";
+"auto_open_after_extraction" = "Ouvrir automatiquement après extraction";
+"confirm_before_deletion" = "Confirmer avant suppression";
+"compression" = "Compression";
+"default_compression_level" = "Niveau de compression par défaut";
+"default_multithreading" = "Multithreading par défaut";
+"default_solid_archive" = "Archive solide par défaut";
+"logging" = "Journalisation";
+"enable_logging" = "Activer la journalisation";
+"log_level" = "Niveau de journalisation";
+"max_log_entries" = "Nombre maximum d'entrées";
+"view_logs" = "Voir les logs";
+"export_logs" = "Exporter les logs";
+"clear_logs" = "Effacer les logs";
+"about" = "À propos";
+"version" = "Version";
+"build" = "Build";
+"architecture" = "Architecture";
+"quit" = "Quitter";
+
+// Archive Operations
+"create_archive" = "Créer une archive";
+"open_archive" = "Ouvrir une archive";
+"extract_archive" = "Extraire l'archive";
+"compress_files" = "Compresser les fichiers";
+"add_files" = "Ajouter des fichiers";
+"delete_files" = "Supprimer les fichiers";
+"test_archive" = "Tester l'archive";
+"list_contents" = "Lister le contenu";
+
+// Archive Formats
+"seven_zip" = "7-Zip";
+"zip" = "ZIP";
+"tar" = "TAR";
+"gzip" = "TAR.GZ";
+"bzip2" = "TAR.BZ2";
+"xz" = "TAR.XZ";
+
+// Compression Methods
+"lzma" = "LZMA";
+"lzma2" = "LZMA2";
+"ppmd" = "PPMd";
+"bzip2_method" = "BZip2";
+"deflate" = "Deflate";
+"deflate64" = "Deflate64";
+"copy" = "Copy";
+
+// UI Elements
+"toolbar" = "Barre d'outils";
+"menu_bar" = "Barre de menu";
+"status_bar" = "Barre d'état";
+"progress_bar" = "Barre de progression";
+"search_bar" = "Barre de recherche";
+"file_list" = "Liste des fichiers";
+"properties" = "Propriétés";
+"settings" = "Paramètres";
+
+// Messages
+"operation_completed" = "Opération terminée";
+"operation_failed" = "Opération échouée";
+"operation_cancelled" = "Opération annulée";
+"archive_created" = "Archive créée";
+"archive_extracted" = "Archive extraite";
+"files_compressed" = "Fichiers compressés";
+"files_added" = "Fichiers ajoutés";
+"files_deleted" = "Fichiers supprimés";
+
+// Errors
+"error_title" = "Erreur";
+"warning_title" = "Avertissement";
+"info_title" = "Information";
+"success_title" = "Succès";
+"file_not_found" = "Fichier non trouvé";
+"permission_denied" = "Permission refusée";
+"disk_full" = "Disque plein";
+"network_error" = "Erreur réseau";
+"invalid_archive" = "Archive invalide";
+"corrupted_archive" = "Archive corrompue";
+
+// File Types
+"folder" = "Dossier";
+"file" = "Fichier";
+"archive" = "Archive";
+"image" = "Image";
+"document" = "Document";
+"video" = "Vidéo";
+"audio" = "Audio";
+
+// Sizes
+"bytes" = "octets";
+"kilobytes" = "Ko";
+"megabytes" = "Mo";
+"gigabytes" = "Go";
+"terabytes" = "To";
+
+// Time
+"seconds" = "%d seconde(s)";
+"minutes" = "%d minute(s)";
+"hours" = "%d heure(s)";
+"days" = "%d jour(s)";
+
+// Compression
+"compression_level" = "Niveau de compression";
+"compression_method" = "Méthode de compression";
+"compression_ratio" = "Ratio de compression";
+"uncompressed_size" = "Taille non compressée";
+"compressed_size" = "Taille compressée";
+"solid_archive" = "Archive solide";
+"multithreading" = "Multi-threading";
+
+// Encryption
+"encryption" = "Chiffrement";
+"password" = "Mot de passe";
+"encrypt_file_names" = "Chiffrer les noms de fichiers";
+"encrypt_headers" = "Chiffrer les en-têtes";
+"aes256" = "AES-256";
+"aes128" = "AES-128";
+"blowfish" = "Blowfish";
+"twofish" = "Twofish";
+
+// Volume Splitting
+"volume_splitting" = "Division en volumes";
+"volume_size" = "Taille des volumes";
+"volume_prefix" = "Préfixe des volumes";
+"volume_suffix" = "Suffixe des volumes";
+"floppy_1440" = "Disquette 1.44 MB";
+"floppy_2880" = "Disquette 2.88 MB";
+"cd_650" = "CD 650 MB";
+"cd_700" = "CD 700 MB";
+"dvd_4700" = "DVD 4.7 GB";
+"dvd_8500" = "DVD 8.5 GB";
+"bd_25000" = "Blu-ray 25 GB";
+"bd_50000" = "Blu-ray 50 GB";
+
+// Filters
+"filters" = "Filtres";
+"include_patterns" = "Modèles d'inclusion";
+"exclude_patterns" = "Modèles d'exclusion";
+"exclude_by_size" = "Exclure par taille";
+"exclude_by_date" = "Exclure par date";
+"exclude_hidden" = "Exclure les fichiers cachés";
+"exclude_system" = "Exclure les fichiers système";
+"exclude_temporary" = "Exclure les fichiers temporaires";
+
+// Themes
+"themes" = "Thèmes";
+"light_theme" = "Thème clair";
+"dark_theme" = "Thème sombre";
+"system_theme" = "Thème système";
+"custom_theme" = "Thème personnalisé";
+"primary_color" = "Couleur principale";
+"secondary_color" = "Couleur secondaire";
+"accent_color" = "Couleur d'accent";
+"background_color" = "Couleur de fond";
+"text_color" = "Couleur de texte";
+
+// Menus
+"file_menu" = "Fichier";
+"edit_menu" = "Édition";
+"view_menu" = "Affichage";
+"operations_menu" = "Opérations";
+"options_menu" = "Options";
+"help_menu" = "Aide";
+"mac7zip_menu" = "Mac7zip";
+
+// Welcome Screen
+"welcome_title" = "Bienvenue dans Mac7zip";
+"welcome_subtitle" = "Votre solution complète pour la gestion d'archives sur macOS";
+"get_started" = "Commencer";
+"create_first_archive" = "Créer votre première archive";
+"open_existing_archive" = "Ouvrir une archive existante";
+"drag_drop_hint" = "Glissez-déposez des fichiers ici pour commencer";
+
+// Progress
+"operation_in_progress" = "Opération en cours";
+"please_wait" = "Veuillez patienter";
+"estimating_time" = "Estimation du temps";
+"time_remaining" = "Temps restant";
+"speed" = "Vitesse";
+"progress" = "Progression";
+
+// Notifications
+"notification_title" = "Mac7zip";
+"archive_created_notification" = "Archive créée avec succès";
+"archive_extracted_notification" = "Archive extraite avec succès";
+"operation_completed_notification" = "Opération terminée";
+"operation_failed_notification" = "Opération échouée";
+
+// Interface principale
+"no_archive_open" = "Aucune archive ouverte";
+"open_existing_or_create_new" = "Ouvrez une archive existante ou créez-en une nouvelle";
+"new_archive" = "Nouvelle archive";
+"open_archive" = "Ouvrir archive";
+"close_archive" = "Fermer archive";
+"preferences" = "Préférences";
+
+// FileListView
+"no_items_found" = "Aucun élément trouvé";
+"search_in_archive" = "Rechercher dans l'archive...";
+
+// Vues modales
+"compression_methods" = "Méthodes de compression";
+"security_options" = "Options de sécurité";
+"advanced_options" = "Options avancées 7-Zip";
+"new_archive" = "Nouvelle archive";
+"create_new_archive_with_files" = "Créez une nouvelle archive avec vos fichiers";
+"steps" = "Étapes";
+"basic" = "Basique";
+"advanced" = "Avancé";
+"files" = "Fichiers";
+"basic_parameters" = "Paramètres de base";
+"archive_name" = "Nom de l'archive";
+"enter_archive_name" = "Entrez le nom de l'archive";
+"archive_format" = "Format d'archive";
+"format" = "Format";
+"destination_folder" = "Dossier de destination";
+"choose" = "Choisir...";
+"create_self_extracting_archive" = "Créer une archive auto-extractible (SFX)";
+"delete_files_after_compression" = "Supprimer les fichiers après compression";
+"cancel" = "Annuler";
+"create" = "Créer";
+
+// Méthodes de compression
+"7zip_methods" = "Méthodes 7-Zip";
+"modern_fast_compression_recommended" = "Méthode de compression moderne et rapide (recommandée)";
+"classic_lzma_compression" = "Méthode de compression LZMA classique";
+"ppmd_compression_good_for_text" = "Méthode de compression PPMd (bonne pour le texte)";
+"bzip2_compression_good_compression" = "Méthode de compression BZip2 (bonne compression)";
+"deflate_compression_zip_compatible" = "Méthode de compression Deflate (compatible ZIP)";
+"encryption" = "Chiffrement";
+"solid" = "Solide";
+"multithread" = "Multithread";
+"level" = "Niveau";
+"close" = "Fermer";
+
+// Options de sécurité
+"password_settings" = "Paramètres de mot de passe";
+"default_password" = "Mot de passe par défaut";
+"enter_default_password_optional" = "Entrez un mot de passe par défaut (optionnel)";
+"remember_password" = "Se souvenir du mot de passe";
+"require_password_for_extraction" = "Exiger un mot de passe pour l'extraction";
+"encryption_settings" = "Paramètres de chiffrement";
+"encryption_method" = "Méthode de chiffrement";
+"method" = "Méthode";
+"aes256_recommended" = "AES-256 (recommandé)";
+"encrypt_file_names" = "Chiffrer les noms de fichiers";
+"restore_defaults" = "Restaurer les valeurs par défaut";
+"apply" = "Appliquer";
+
+// Options avancées 7-Zip
+"compression_options" = "Options de compression";
+"compression_method" = "Méthode de compression";
+"compression_level" = "Niveau de compression";
+"solid_mode" = "Mode solide";
+"multithreading" = "Multithreading";
+"archive_options" = "Options d'archive";
+"delete_after_compression" = "Supprimer après compression";
+"create_self_extracting_sfx" = "Créer une archive auto-extractible (SFX)";
+"volume_splitting" = "Division en volumes";
+"volume_size_ex" = "Taille des volumes (ex: 100m, 1g)";
+"add" = "Ajouter";
+"use_macos_keychain" = "Utiliser le trousseau macOS";
+"secure_delete" = "Suppression sécurisée";
+"security_features" = "Fonctionnalités de sécurité";
+"auto_delete_after_extraction" = "Suppression automatique après extraction";
+"security_info" = "Informations de sécurité";
+"memory_options" = "Options de mémoire";
+"memory_usage_description" = "Ces options contrôlent l'utilisation de la mémoire pendant la compression.";
+"memory_options_to_implement" = "Options de mémoire à implémenter";
+"password_strength" = "Force du mot de passe";
+"current_strength" = "Force actuelle:";
+"filters_and_exclusions" = "Filtres et exclusions";
+"include_patterns" = "Patterns d'inclusion";
+"exclude_patterns" = "Patterns d'exclusion";
+"include_patterns_placeholder" = "Patterns à inclure (ex: *.txt, docs/*)";
+"exclude_patterns_placeholder" = "Patterns à exclure (ex: *.tmp, cache/*)";

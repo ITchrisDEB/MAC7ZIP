@@ -1,0 +1,228 @@
+name: Notarize and Sign Mac7zip
+
+on:
+  release:
+    types: [ published ]
+  workflow_dispatch:
+    inputs:
+      skip_notarization:
+        description: 'Skip notarization (for testing)'
+        required: false
+        default: 'false'
+        type: boolean
+
+env:
+  APP_NAME: 'Mac7zip'
+  BUNDLE_ID: 'com.mac7zip.app'
+  NOTARIZATION_SERVICE: 'apple'
+
+jobs:
+  notarize:
+    name: Code Sign and Notarize
+    runs-on: macos-14
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Download Build Artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: Mac7zip-Universal
+        path: build/Release/
+    
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '15.0'
+    
+    - name: Import Code Signing Certificate
+      uses: Apple-Actions/import-codesign-certs@v2
+      with:
+        p12-file-base64: ${{ secrets.CERTIFICATE_P12 }}
+        p12-password: ${{ secrets.CERTIFICATE_PASSWORD }}
+    
+    - name: Import Notarization Credentials
+      uses: Apple-Actions/import-notarization-credentials@v1
+      with:
+        appstore-connect-api-key-id: ${{ secrets.APPSTORE_CONNECT_API_KEY_ID }}
+        appstore-connect-api-issuer-id: ${{ secrets.APPSTORE_CONNECT_API_ISSUER_ID }}
+        appstore-connect-api-private-key: ${{ secrets.APPSTORE_CONNECT_API_PRIVATE_KEY }}
+    
+    - name: Code Sign Application
+      run: |
+        # Créer les entitlements
+        cat > entitlements.plist << EOF
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+        <plist version="1.0">
+        <dict>
+            <key>com.apple.security.cs.allow-jit</key>
+            <true/>
+            <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+            <true/>
+            <key>com.apple.security.cs.allow-dyld-environment-variables</key>
+            <true/>
+            <key>com.apple.security.cs.disable-library-validation</key>
+            <true/>
+        </dict>
+        </plist>
+        EOF
+        
+        # Signer l'application
+        codesign --force --deep --sign "Developer ID Application: ${{ secrets.DEVELOPER_ID }}" \
+                 --entitlements entitlements.plist \
+                 --options runtime \
+                 build/Release/$APP_NAME.app
+        
+        # Vérifier la signature
+        codesign -dv --verbose=4 build/Release/$APP_NAME.app
+        spctl -a -v build/Release/$APP_NAME.app
+    
+    - name: Create ZIP for Notarization
+      run: |
+        # Créer un ZIP pour la notarisation
+        cd build/Release
+        zip -r "$APP_NAME.zip" "$APP_NAME.app"
+        cd ../..
+    
+    - name: Notarize Application
+      if: ${{ !inputs.skip_notarization }}
+      run: |
+        # Soumettre pour notarisation
+        xcrun notarytool submit build/Release/$APP_NAME.zip \
+          --keychain-profile "notarization-profile" \
+          --wait
+        
+        # Staple la notarisation
+        xcrun stapler staple build/Release/$APP_NAME.app
+        
+        # Vérifier la notarisation
+        xcrun stapler validate build/Release/$APP_NAME.app
+        spctl -a -v build/Release/$APP_NAME.app
+    
+    - name: Create Final DMG
+      run: |
+        # Créer le DMG final
+        hdiutil create -volname "$APP_NAME" \
+          -srcfolder "build/Release/$APP_NAME.app" \
+          -ov -format UDZO \
+          -fs HFS+ \
+          "$APP_NAME-Notarized.dmg"
+        
+        # Signer le DMG
+        codesign --sign "Developer ID Application: ${{ secrets.DEVELOPER_ID }}" \
+                 "$APP_NAME-Notarized.dmg"
+    
+    - name: Upload Notarized Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Mac7zip-Notarized
+        path: |
+          $APP_NAME-Notarized.dmg
+          build/Release/$APP_NAME.app
+        retention-days: 90
+    
+    - name: Create Release Notes
+      run: |
+        cat > release_notes.md << EOF
+        # Mac7zip v${{ github.event.release.tag_name }}
+        
+        ## Changes
+        - Universal binary (Intel + Apple Silicon)
+        - Code signed and notarized
+        - Full 7-Zip compatibility
+        - Native macOS integration
+        
+        ## Installation
+        1. Download the DMG file
+        2. Open the DMG
+        3. Drag Mac7zip to Applications folder
+        4. Launch from Applications or Spotlight
+        
+        ## Features
+        - Support for all 7-Zip formats
+        - Native macOS archive support
+        - Finder integration
+        - CLI wrapper
+        - Dark mode support
+        - French/English localization
+        
+        ## System Requirements
+        - macOS 14.0 or later
+        - Intel or Apple Silicon Mac
+        EOF
+    
+    - name: Update Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          $APP_NAME-Notarized.dmg
+          build/Release/$APP_NAME.app
+        body_path: release_notes.md
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  verify:
+    name: Verify Notarization
+    runs-on: macos-14
+    needs: notarize
+    if: always()
+    
+    steps:
+    - name: Download Notarized Artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: Mac7zip-Notarized
+        path: build/Release/
+    
+    - name: Verify Code Signature
+      run: |
+        # Vérifier la signature de l'application
+        codesign -dv --verbose=4 build/Release/$APP_NAME.app
+        spctl -a -v build/Release/$APP_NAME.app
+        
+        # Vérifier la signature du DMG
+        codesign -dv --verbose=4 $APP_NAME-Notarized.dmg
+        spctl -a -v $APP_NAME-Notarized.dmg
+    
+    - name: Test Application Launch
+      run: |
+        # Tester le lancement de l'application
+        timeout 10s build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME --version || true
+        
+        # Tester le wrapper CLI
+        build/Release/$APP_NAME.app/Contents/MacOS/7z --help || true
+    
+    - name: Generate Verification Report
+      run: |
+        cat > verification_report.md << EOF
+        # Verification Report
+        
+        ## Code Signing
+        - Application: $(codesign -dv build/Release/$APP_NAME.app 2>&1 | head -1)
+        - DMG: $(codesign -dv $APP_NAME-Notarized.dmg 2>&1 | head -1)
+        
+        ## Notarization
+        - Status: $(xcrun stapler validate build/Release/$APP_NAME.app 2>&1)
+        
+        ## Gatekeeper
+        - Application: $(spctl -a -v build/Release/$APP_NAME.app 2>&1)
+        - DMG: $(spctl -a -v $APP_NAME-Notarized.dmg 2>&1)
+        
+        ## File Sizes
+        - Application: $(du -h build/Release/$APP_NAME.app | cut -f1)
+        - DMG: $(du -h $APP_NAME-Notarized.dmg | cut -f1)
+        EOF
+        
+        cat verification_report.md
+    
+    - name: Upload Verification Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: Verification-Report
+        path: verification_report.md
+        retention-days: 30

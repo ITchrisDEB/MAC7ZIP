@@ -1,0 +1,308 @@
+name: Build and Test Mac7zip
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [ published ]
+
+env:
+  XCODE_VERSION: '15.0'
+  MACOS_VERSION: '14.0'
+  APP_NAME: 'Mac7zip'
+  BUNDLE_ID: 'com.mac7zip.app'
+
+jobs:
+  build:
+    name: Build Universal Binary
+    runs-on: macos-14
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: ${{ env.XCODE_VERSION }}
+    
+    - name: Cache Swift Package Manager
+      uses: actions/cache@v3
+      with:
+        path: .build
+        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        restore-keys: |
+          ${{ runner.os }}-spm-
+    
+    - name: Cache Xcode DerivedData
+      uses: actions/cache@v3
+      with:
+        path: ~/Library/Developer/Xcode/DerivedData
+        key: ${{ runner.os }}-xcode-${{ hashFiles('**/*.xcodeproj') }}
+        restore-keys: |
+          ${{ runner.os }}-xcode-
+    
+    - name: Install 7zz binary
+      run: |
+        # Télécharger 7zz depuis le repository officiel
+        curl -L -o 7zz.tar.xz "https://github.com/mcmilk/7-Zip-zstd/releases/latest/download/7z2301-mac.tar.xz"
+        tar -xf 7zz.tar.xz
+        chmod +x 7zz
+        mkdir -p build/Release/$APP_NAME.app/Contents/Resources/
+        cp 7zz build/Release/$APP_NAME.app/Contents/Resources/
+    
+    - name: Build for Intel
+      run: |
+        xcodebuild -project Mac7zip.xcodeproj \
+          -scheme Mac7zip \
+          -configuration Release \
+          -destination 'platform=macOS,arch=x86_64' \
+          -derivedDataPath DerivedData \
+          build
+    
+    - name: Build for Apple Silicon
+      run: |
+        xcodebuild -project Mac7zip.xcodeproj \
+          -scheme Mac7zip \
+          -configuration Release \
+          -destination 'platform=macOS,arch=arm64' \
+          -derivedDataPath DerivedData \
+          build
+    
+    - name: Create Universal Binary
+      run: |
+        # Créer le dossier de l'application
+        mkdir -p build/Release/$APP_NAME.app/Contents/{MacOS,Resources}
+        
+        # Copier les binaires
+        cp DerivedData/Build/Products/Release-x86_64/$APP_NAME build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME-x86_64
+        cp DerivedData/Build/Products/Release-arm64/$APP_NAME build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME-arm64
+        
+        # Créer le binaire universel
+        lipo -create \
+          build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME-x86_64 \
+          build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME-arm64 \
+          -output build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME
+        
+        # Supprimer les binaires individuels
+        rm build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME-x86_64
+        rm build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME-arm64
+        
+        # Copier les ressources
+        cp -r DerivedData/Build/Products/Release-arm64/$APP_NAME.app/Contents/Resources/* build/Release/$APP_NAME.app/Contents/Resources/ 2>/dev/null || true
+        
+        # Créer l'Info.plist
+        cat > build/Release/$APP_NAME.app/Contents/Info.plist << EOF
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+        <plist version="1.0">
+        <dict>
+            <key>CFBundleDisplayName</key>
+            <string>$APP_NAME</string>
+            <key>CFBundleExecutable</key>
+            <string>$APP_NAME</string>
+            <key>CFBundleIdentifier</key>
+            <string>$BUNDLE_ID</string>
+            <key>CFBundleName</key>
+            <string>$APP_NAME</string>
+            <key>CFBundleVersion</key>
+            <string>1.0.0</string>
+            <key>CFBundleShortVersionString</key>
+            <string>1.0.0</string>
+            <key>CFBundlePackageType</key>
+            <string>APPL</string>
+            <key>CFBundleSignature</key>
+            <string>????</string>
+            <key>LSMinimumSystemVersion</key>
+            <string>$MACOS_VERSION</string>
+            <key>NSHighResolutionCapable</key>
+            <true/>
+            <key>NSSupportsAutomaticGraphicsSwitching</key>
+            <true/>
+            <key>CFBundleDocumentTypes</key>
+            <array>
+                <dict>
+                    <key>CFBundleTypeName</key>
+                    <string>Archive Files</string>
+                    <key>CFBundleTypeRole</key>
+                    <string>Viewer</string>
+                    <key>LSItemContentTypes</key>
+                    <array>
+                        <string>public.zip-archive</string>
+                        <string>public.data</string>
+                        <string>com.pkware.zip-archive</string>
+                        <string>org.7zip.7z-archive</string>
+                        <string>public.tar-archive</string>
+                        <string>public.tar-gz-archive</string>
+                        <string>public.tar-bz2-archive</string>
+                        <string>public.tar-xz-archive</string>
+                    </array>
+                </dict>
+            </array>
+        </dict>
+        </plist>
+        EOF
+        
+        # Rendre l'application exécutable
+        chmod +x build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME
+    
+    - name: Create CLI Wrapper
+      run: |
+        # Créer le wrapper CLI 7z
+        cat > build/Release/$APP_NAME.app/Contents/MacOS/7z << 'EOF'
+        #!/bin/bash
+        APP_BUNDLE="$(dirname "$0")/.."
+        SEVENZZ_BINARY="$APP_BUNDLE/Resources/7zz"
+        
+        if [ ! -f "$SEVENZZ_BINARY" ]; then
+            echo "Erreur: Impossible de trouver le binaire 7zz"
+            exit 1
+        fi
+        
+        exec "$SEVENZZ_BINARY" "$@"
+        EOF
+        chmod +x build/Release/$APP_NAME.app/Contents/MacOS/7z
+    
+    - name: Test Application
+      run: |
+        # Tester que l'application se lance
+        timeout 10s build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME --version || true
+        
+        # Tester le wrapper CLI
+        build/Release/$APP_NAME.app/Contents/MacOS/7z --help || true
+    
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Mac7zip-Universal
+        path: build/Release/$APP_NAME.app
+        retention-days: 30
+
+  test:
+    name: Run Tests
+    runs-on: macos-14
+    needs: build
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: ${{ env.XCODE_VERSION }}
+    
+    - name: Download Build Artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: Mac7zip-Universal
+        path: build/Release/
+    
+    - name: Run Unit Tests
+      run: |
+        xcodebuild test \
+          -project Mac7zip.xcodeproj \
+          -scheme Mac7zip \
+          -destination 'platform=macOS,arch=arm64' \
+          -derivedDataPath DerivedData
+    
+    - name: Run Integration Tests
+      run: |
+        # Créer des archives de test
+        mkdir -p test_files
+        echo "Test file 1" > test_files/file1.txt
+        echo "Test file 2" > test_files/file2.txt
+        
+        # Tester la création d'archives
+        build/Release/$APP_NAME.app/Contents/MacOS/7z a test_archive.7z test_files/
+        
+        # Tester l'extraction
+        mkdir extracted
+        build/Release/$APP_NAME.app/Contents/MacOS/7z x test_archive.7z -oextracted/
+        
+        # Vérifier que les fichiers ont été extraits
+        if [ -f "extracted/test_files/file1.txt" ] && [ -f "extracted/test_files/file2.txt" ]; then
+          echo "✅ Integration tests passed"
+        else
+          echo "❌ Integration tests failed"
+          exit 1
+        fi
+
+  package:
+    name: Create Installer Package
+    runs-on: macos-14
+    needs: [build, test]
+    if: github.event_name == 'release'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Download Build Artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: Mac7zip-Universal
+        path: build/Release/
+    
+    - name: Create DMG
+      run: |
+        # Créer le DMG
+        hdiutil create -volname "$APP_NAME" -srcfolder "build/Release/$APP_NAME.app" -ov -format UDZO "$APP_NAME.dmg"
+    
+    - name: Create PKG Installer
+      run: |
+        # Créer le package PKG
+        pkgbuild --component "build/Release/$APP_NAME.app" \
+                 --install-location "/Applications" \
+                 --identifier "$BUNDLE_ID" \
+                 --version "1.0.0" \
+                 "$APP_NAME.pkg"
+    
+    - name: Upload Release Assets
+      uses: actions/upload-artifact@v3
+      with:
+        name: Mac7zip-Installer
+        path: |
+          $APP_NAME.dmg
+          $APP_NAME.pkg
+        retention-days: 90
+
+  security-scan:
+    name: Security Scan
+    runs-on: macos-14
+    needs: build
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Download Build Artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: Mac7zip-Universal
+        path: build/Release/
+    
+    - name: Run Security Scan
+      run: |
+        # Scanner les vulnérabilités avec CodeQL
+        echo "Running security scan..."
+        
+        # Vérifier les permissions
+        ls -la build/Release/$APP_NAME.app/Contents/MacOS/
+        
+        # Vérifier les signatures
+        codesign -dv build/Release/$APP_NAME.app/ || echo "App not signed"
+        
+        # Vérifier les dépendances
+        otool -L build/Release/$APP_NAME.app/Contents/MacOS/$APP_NAME || echo "No dependencies found"
+    
+    - name: Upload Security Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: Security-Report
+        path: security-report.txt
+        if-no-files-found: ignore

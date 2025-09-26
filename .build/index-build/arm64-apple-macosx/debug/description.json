@@ -1,0 +1,651 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/Info.plist"
+        }
+      ]
+    },
+    "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/en.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/Localizations/en.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/en.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/fr.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/Localizations/fr.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip_Mac7zip.bundle/fr.lproj/Localizable.strings"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Mac7zip-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources",
+      "importPath" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AboutView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AdaptiveAdvancedOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AddFilesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AdvancedOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AppleArchiveEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ArchiveEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ArchiveTreeItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/BenchmarkView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/CompressionMethods.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/CompressionMethodsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ErrorManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ExtractView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FileListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FileRowView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FilterManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FilterOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FormatOptions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/LocalizationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/LogManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/Mac7zipApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/NewArchiveView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/NotificationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/PreferencesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ProgressTracker.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/PropertiesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/RarOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/SecurityOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ThemeManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/UTTypeExtensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/VolumeManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/VolumeOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/WindowManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<Mac7zip-arm64-apple-macosx26.0-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Mac7zip",
+      "moduleOutputPath" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Modules/Mac7zip.swiftmodule",
+      "objects" : [
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AboutView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdaptiveAdvancedOptionsView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AddFilesView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AdvancedOptionsView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/AppleArchiveEngine.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveEngine.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ArchiveTreeItem.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/BenchmarkView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethods.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/CompressionMethodsView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ContentView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ErrorManager.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ExtractView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileListView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FileRowView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterManager.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FilterOptionsView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/FormatOptions.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LocalizationManager.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/LogManager.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/Mac7zipApp.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NewArchiveView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/NotificationManager.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PreferencesView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ProgressTracker.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/PropertiesView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/RarOptionsView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/SecurityOptionsView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/ThemeManager.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/UTTypeExtensions.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeManager.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/VolumeOptionsView.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/WindowManager.swift.o",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Mac7zip_main",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "maczip"
+      ],
+      "outputFileMapPath" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Modules/Mac7zip.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/chris/Documents/Projet/MACZIP/AboutView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/AdaptiveAdvancedOptionsView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/AddFilesView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/AdvancedOptionsView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/AppleArchiveEngine.swift",
+        "/Users/chris/Documents/Projet/MACZIP/ArchiveEngine.swift",
+        "/Users/chris/Documents/Projet/MACZIP/ArchiveTreeItem.swift",
+        "/Users/chris/Documents/Projet/MACZIP/BenchmarkView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/CompressionMethods.swift",
+        "/Users/chris/Documents/Projet/MACZIP/CompressionMethodsView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/ContentView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/ErrorManager.swift",
+        "/Users/chris/Documents/Projet/MACZIP/ExtractView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/FileListView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/FileRowView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/FilterManager.swift",
+        "/Users/chris/Documents/Projet/MACZIP/FilterOptionsView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/FormatOptions.swift",
+        "/Users/chris/Documents/Projet/MACZIP/LocalizationManager.swift",
+        "/Users/chris/Documents/Projet/MACZIP/LogManager.swift",
+        "/Users/chris/Documents/Projet/MACZIP/Mac7zipApp.swift",
+        "/Users/chris/Documents/Projet/MACZIP/NewArchiveView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/NotificationManager.swift",
+        "/Users/chris/Documents/Projet/MACZIP/PreferencesView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/ProgressTracker.swift",
+        "/Users/chris/Documents/Projet/MACZIP/PropertiesView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/RarOptionsView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/SecurityOptionsView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/ThemeManager.swift",
+        "/Users/chris/Documents/Projet/MACZIP/UTTypeExtensions.swift",
+        "/Users/chris/Documents/Projet/MACZIP/VolumeManager.swift",
+        "/Users/chris/Documents/Projet/MACZIP/VolumeOptionsView.swift",
+        "/Users/chris/Documents/Projet/MACZIP/WindowManager.swift",
+        "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Mac7zip" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Mac7zip",
+      "-package-name",
+      "maczip",
+      "-c",
+      "/Users/chris/Documents/Projet/MACZIP/AboutView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/AdaptiveAdvancedOptionsView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/AddFilesView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/AdvancedOptionsView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/AppleArchiveEngine.swift",
+      "/Users/chris/Documents/Projet/MACZIP/ArchiveEngine.swift",
+      "/Users/chris/Documents/Projet/MACZIP/ArchiveTreeItem.swift",
+      "/Users/chris/Documents/Projet/MACZIP/BenchmarkView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/CompressionMethods.swift",
+      "/Users/chris/Documents/Projet/MACZIP/CompressionMethodsView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/ContentView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/ErrorManager.swift",
+      "/Users/chris/Documents/Projet/MACZIP/ExtractView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/FileListView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/FileRowView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/FilterManager.swift",
+      "/Users/chris/Documents/Projet/MACZIP/FilterOptionsView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/FormatOptions.swift",
+      "/Users/chris/Documents/Projet/MACZIP/LocalizationManager.swift",
+      "/Users/chris/Documents/Projet/MACZIP/LogManager.swift",
+      "/Users/chris/Documents/Projet/MACZIP/Mac7zipApp.swift",
+      "/Users/chris/Documents/Projet/MACZIP/NewArchiveView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/NotificationManager.swift",
+      "/Users/chris/Documents/Projet/MACZIP/PreferencesView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/ProgressTracker.swift",
+      "/Users/chris/Documents/Projet/MACZIP/PropertiesView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/RarOptionsView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/SecurityOptionsView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/ThemeManager.swift",
+      "/Users/chris/Documents/Projet/MACZIP/UTTypeExtensions.swift",
+      "/Users/chris/Documents/Projet/MACZIP/VolumeManager.swift",
+      "/Users/chris/Documents/Projet/MACZIP/VolumeOptionsView.swift",
+      "/Users/chris/Documents/Projet/MACZIP/WindowManager.swift",
+      "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Mac7zip_main",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "maczip",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Mac7zip" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AboutView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AdaptiveAdvancedOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AddFilesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AdvancedOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/AppleArchiveEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ArchiveEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ArchiveTreeItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/BenchmarkView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/CompressionMethods.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/CompressionMethodsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ErrorManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ExtractView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FileListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FileRowView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FilterManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FilterOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/FormatOptions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/LocalizationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/LogManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/Mac7zipApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/NewArchiveView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/NotificationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/PreferencesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ProgressTracker.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/PropertiesView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/RarOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/SecurityOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/ThemeManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/UTTypeExtensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/VolumeManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/VolumeOptionsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/WindowManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/Mac7zip.build/sources"
+    },
+    "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/chris/Documents/Projet/MACZIP/.build/index-build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
