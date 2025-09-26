@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1234567890ABCDEF1234567 /* Mac7zipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234566 /* Mac7zipApp.swift */; };
+		A1234567890ABCDEF1234568 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234567 /* ContentView.swift */; };
+		A1234567890ABCDEF1234569 /* ArchiveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234568 /* ArchiveEngine.swift */; };
+		A1234567890ABCDEF123456A /* AppleArchiveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234569 /* AppleArchiveEngine.swift */; };
+		A1234567890ABCDEF123456B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123456A /* AboutView.swift */; };
+		A1234567890ABCDEF123456C /* AddFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123456B /* AddFilesView.swift */; };
+		A1234567890ABCDEF123456D /* AdvancedOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123456C /* AdvancedOptionsView.swift */; };
+		A1234567890ABCDEF123456E /* BenchmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123456D /* BenchmarkView.swift */; };
+		A1234567890ABCDEF123456F /* CompressionMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123456E /* CompressionMethods.swift */; };
+		A1234567890ABCDEF1234570 /* CompressionMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123456F /* CompressionMethodsView.swift */; };
+		A1234567890ABCDEF1234571 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234570 /* ErrorManager.swift */; };
+		A1234567890ABCDEF1234572 /* ExtractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234571 /* ExtractView.swift */; };
+		A1234567890ABCDEF1234573 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234572 /* FileListView.swift */; };
+		A1234567890ABCDEF1234574 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234573 /* FilterManager.swift */; };
+		A1234567890ABCDEF1234575 /* FilterOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234574 /* FilterOptionsView.swift */; };
+		A1234567890ABCDEF1234576 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234575 /* LocalizationManager.swift */; };
+		A1234567890ABCDEF1234577 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234576 /* LogManager.swift */; };
+		A1234567890ABCDEF1234578 /* NewArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234577 /* NewArchiveView.swift */; };
+		A1234567890ABCDEF1234579 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234578 /* NotificationManager.swift */; };
+		A1234567890ABCDEF123457A /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234579 /* PreferencesView.swift */; };
+		A1234567890ABCDEF123457B /* ProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123457A /* ProgressTracker.swift */; };
+		A1234567890ABCDEF123457C /* PropertiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123457B /* PropertiesView.swift */; };
+		A1234567890ABCDEF123457D /* RarOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123457C /* RarOptionsView.swift */; };
+		A1234567890ABCDEF123457E /* SecurityOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123457D /* SecurityOptionsView.swift */; };
+		A1234567890ABCDEF123457F /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123457E /* ThemeManager.swift */; };
+		A1234567890ABCDEF1234580 /* UTTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF123457F /* UTTypeExtensions.swift */; };
+		A1234567890ABCDEF1234581 /* VolumeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234580 /* VolumeManager.swift */; };
+		A1234567890ABCDEF1234582 /* VolumeOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234581 /* VolumeOptionsView.swift */; };
+		A1234567890ABCDEF1234583 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234582 /* WindowManager.swift */; };
+		A1234567890ABCDEF1234584 /* 7zz in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234583 /* 7zz */; };
+		A1234567890ABCDEF1234585 /* rar in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234584 /* rar */; };
+		A1234567890ABCDEF1234586 /* unrar in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234585 /* unrar */; };
+		A1234567890ABCDEF1234587 /* xz in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234586 /* xz */; };
+		A1234567890ABCDEF1234588 /* unxz in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234587 /* unxz */; };
+		A1234567890ABCDEF1234589 /* lzma in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890ABCDEF1234588 /* lzma */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1234567890ABCDEF1234565 /* Mac7zip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mac7zip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1234567890ABCDEF1234566 /* Mac7zipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mac7zipApp.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234567 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234568 /* ArchiveEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveEngine.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234569 /* AppleArchiveEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleArchiveEngine.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123456A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123456B /* AddFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFilesView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123456C /* AdvancedOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedOptionsView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123456D /* BenchmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123456E /* CompressionMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionMethods.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123456F /* CompressionMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressionMethodsView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234570 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234571 /* ExtractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234572 /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234573 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234574 /* FilterOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionsView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234575 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234576 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234577 /* NewArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArchiveView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234578 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234579 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123457A /* ProgressTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTracker.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123457B /* PropertiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123457C /* RarOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RarOptionsView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123457D /* SecurityOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityOptionsView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123457E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF123457F /* UTTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTTypeExtensions.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234580 /* VolumeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeManager.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234581 /* VolumeOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeOptionsView.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234582 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234583 /* 7zz */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = 7zz; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234584 /* rar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rar; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234585 /* unrar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = unrar; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234586 /* xz */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = xz; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234587 /* unxz */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = unxz; sourceTree = "<group>"; };
+		A1234567890ABCDEF1234588 /* lzma */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = lzma; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1234567890ABCDEF1234562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1234567890ABCDEF123455C /* Mac7zip */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890ABCDEF1234566 /* Mac7zipApp.swift */,
+				A1234567890ABCDEF1234567 /* ContentView.swift */,
+				A1234567890ABCDEF1234568 /* ArchiveEngine.swift */,
+				A1234567890ABCDEF1234569 /* AppleArchiveEngine.swift */,
+				A1234567890ABCDEF123456A /* AboutView.swift */,
+				A1234567890ABCDEF123456B /* AddFilesView.swift */,
+				A1234567890ABCDEF123456C /* AdvancedOptionsView.swift */,
+				A1234567890ABCDEF123456D /* BenchmarkView.swift */,
+				A1234567890ABCDEF123456E /* CompressionMethods.swift */,
+				A1234567890ABCDEF123456F /* CompressionMethodsView.swift */,
+				A1234567890ABCDEF1234570 /* ErrorManager.swift */,
+				A1234567890ABCDEF1234571 /* ExtractView.swift */,
+				A1234567890ABCDEF1234572 /* FileListView.swift */,
+				A1234567890ABCDEF1234573 /* FilterManager.swift */,
+				A1234567890ABCDEF1234574 /* FilterOptionsView.swift */,
+				A1234567890ABCDEF1234575 /* LocalizationManager.swift */,
+				A1234567890ABCDEF1234576 /* LogManager.swift */,
+				A1234567890ABCDEF1234577 /* NewArchiveView.swift */,
+				A1234567890ABCDEF1234578 /* NotificationManager.swift */,
+				A1234567890ABCDEF1234579 /* PreferencesView.swift */,
+				A1234567890ABCDEF123457A /* ProgressTracker.swift */,
+				A1234567890ABCDEF123457B /* PropertiesView.swift */,
+				A1234567890ABCDEF123457C /* RarOptionsView.swift */,
+				A1234567890ABCDEF123457D /* SecurityOptionsView.swift */,
+				A1234567890ABCDEF123457E /* ThemeManager.swift */,
+				A1234567890ABCDEF123457F /* UTTypeExtensions.swift */,
+				A1234567890ABCDEF1234580 /* VolumeManager.swift */,
+				A1234567890ABCDEF1234581 /* VolumeOptionsView.swift */,
+				A1234567890ABCDEF1234582 /* WindowManager.swift */,
+				A1234567890ABCDEF1234589 /* Resources */,
+			);
+			path = Mac7zip;
+			sourceTree = "<group>";
+		};
+		A1234567890ABCDEF1234589 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890ABCDEF1234583 /* 7zz */,
+				A1234567890ABCDEF1234584 /* rar */,
+				A1234567890ABCDEF1234585 /* unrar */,
+				A1234567890ABCDEF1234586 /* xz */,
+				A1234567890ABCDEF1234587 /* unxz */,
+				A1234567890ABCDEF1234588 /* lzma */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1234567890ABCDEF123455B = {
+			isa = PBXGroup;
+			children = (
+				A1234567890ABCDEF123455C /* Mac7zip */,
+				A1234567890ABCDEF1234564 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1234567890ABCDEF1234564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1234567890ABCDEF1234565 /* Mac7zip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1234567890ABCDEF1234561 /* Mac7zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1234567890ABCDEF123458A /* Build configuration list for PBXNativeTarget "Mac7zip" */;
+			buildPhases = (
+				A1234567890ABCDEF123455E /* Sources */,
+				A1234567890ABCDEF1234562 /* Frameworks */,
+				A1234567890ABCDEF1234563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mac7zip;
+			productName = Mac7zip;
+			productReference = A1234567890ABCDEF1234565 /* Mac7zip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1234567890ABCDEF123455D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1234567890ABCDEF1234561 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1234567890ABCDEF1234560 /* Build configuration list for PBXProject "Mac7zip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+			);
+			mainGroup = A1234567890ABCDEF123455B;
+			productRefGroup = A1234567890ABCDEF1234564 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1234567890ABCDEF1234561 /* Mac7zip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1234567890ABCDEF1234563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1234567890ABCDEF1234584 /* 7zz in Resources */,
+				A1234567890ABCDEF1234585 /* rar in Resources */,
+				A1234567890ABCDEF1234586 /* unrar in Resources */,
+				A1234567890ABCDEF1234587 /* xz in Resources */,
+				A1234567890ABCDEF1234588 /* unxz in Resources */,
+				A1234567890ABCDEF1234589 /* lzma in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1234567890ABCDEF123455E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1234567890ABCDEF1234567 /* Mac7zipApp.swift in Sources */,
+				A1234567890ABCDEF1234568 /* ContentView.swift in Sources */,
+				A1234567890ABCDEF1234569 /* ArchiveEngine.swift in Sources */,
+				A1234567890ABCDEF123456A /* AppleArchiveEngine.swift in Sources */,
+				A1234567890ABCDEF123456B /* AboutView.swift in Sources */,
+				A1234567890ABCDEF123456C /* AddFilesView.swift in Sources */,
+				A1234567890ABCDEF123456D /* AdvancedOptionsView.swift in Sources */,
+				A1234567890ABCDEF123456E /* BenchmarkView.swift in Sources */,
+				A1234567890ABCDEF123456F /* CompressionMethods.swift in Sources */,
+				A1234567890ABCDEF1234570 /* CompressionMethodsView.swift in Sources */,
+				A1234567890ABCDEF1234571 /* ErrorManager.swift in Sources */,
+				A1234567890ABCDEF1234572 /* ExtractView.swift in Sources */,
+				A1234567890ABCDEF1234573 /* FileListView.swift in Sources */,
+				A1234567890ABCDEF1234574 /* FilterManager.swift in Sources */,
+				A1234567890ABCDEF1234575 /* FilterOptionsView.swift in Sources */,
+				A1234567890ABCDEF1234576 /* LocalizationManager.swift in Sources */,
+				A1234567890ABCDEF1234577 /* LogManager.swift in Sources */,
+				A1234567890ABCDEF1234578 /* NewArchiveView.swift in Sources */,
+				A1234567890ABCDEF1234579 /* NotificationManager.swift in Sources */,
+				A1234567890ABCDEF123457A /* PreferencesView.swift in Sources */,
+				A1234567890ABCDEF123457B /* ProgressTracker.swift in Sources */,
+				A1234567890ABCDEF123457C /* PropertiesView.swift in Sources */,
+				A1234567890ABCDEF123457D /* RarOptionsView.swift in Sources */,
+				A1234567890ABCDEF123457E /* SecurityOptionsView.swift in Sources */,
+				A1234567890ABCDEF123457F /* ThemeManager.swift in Sources */,
+				A1234567890ABCDEF1234580 /* UTTypeExtensions.swift in Sources */,
+				A1234567890ABCDEF1234581 /* VolumeManager.swift in Sources */,
+				A1234567890ABCDEF1234582 /* VolumeOptionsView.swift in Sources */,
+				A1234567890ABCDEF1234583 /* WindowManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1234567890ABCDEF123458B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1234567890ABCDEF123458C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A1234567890ABCDEF123458D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mac7zip/Mac7zip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mac7zip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac7zip.Mac7zip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1234567890ABCDEF123458E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mac7zip/Mac7zip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mac7zip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac7zip.Mac7zip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1234567890ABCDEF1234560 /* Build configuration list for PBXProject "Mac7zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1234567890ABCDEF123458B /* Debug */,
+				A1234567890ABCDEF123458C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1234567890ABCDEF123458A /* Build configuration list for PBXNativeTarget "Mac7zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1234567890ABCDEF123458D /* Debug */,
+				A1234567890ABCDEF123458E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1234567890ABCDEF123455D /* Project object */;
+}
