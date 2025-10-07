@@ -55,8 +55,11 @@ let package = Package(
                 "WindowManager.swift"
             ],
             resources: [
-                .process("Mac7zip.app/Contents/Resources"),
-                .process("Localizations")
+                .copy("Source/7zz"),
+                .copy("Source/rar"),
+                .copy("Source/unrar"),
+                .process("Localizations"),
+                .process("Mac7zip.icns")
             ]
         )
     ]

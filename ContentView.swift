@@ -95,6 +95,9 @@ struct ContentView: View {
             NotificationCenter.default.removeObserver(self, name: NSWindow.didResignKeyNotification, object: nil)
         }
         // showAddFiles, showExtract, showProperties gérés par FocusedBinding
+        .onReceive(NotificationCenter.default.publisher(for: .showExtract)) { _ in
+            showExtract = true
+        }
         .onReceive(NotificationCenter.default.publisher(for: .showAdvancedOptions)) { _ in
             showAdvancedOptions = true
         }

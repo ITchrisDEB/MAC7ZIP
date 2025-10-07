@@ -608,17 +608,14 @@ class SevenZipArchiveEngine: ArchiveEngine {
     private let sevenZipPath: String
     
     init() {
-        // Utiliser la méthode des Resources en priorité (comme RarArchiveEngine)
-        if let resourcePath = Bundle.main.resourcePath {
-            self.sevenZipPath = resourcePath + "/7zz"
-            NSLog("✅ Binaire 7zz trouvé dans Resources: \(resourcePath)/7zz")
-        } else if let sevenZipBundlePath = Bundle.main.path(forResource: "7zz", ofType: nil) {
-            self.sevenZipPath = sevenZipBundlePath
-            NSLog("✅ Binaire 7zz trouvé via Bundle.main.path: \(sevenZipBundlePath)")
+        // Chercher le binaire 7zz dans Resources
+        if let sevenZipDirectPath = Bundle.main.path(forResource: "7zz", ofType: nil) {
+            self.sevenZipPath = sevenZipDirectPath
+            NSLog("✅ Binaire 7zz trouvé dans Resources: \(sevenZipDirectPath)")
         } else {
-            // Dernier fallback - utiliser le nom du binaire directement
-            self.sevenZipPath = "7zz"
-            NSLog("⚠️ Binaire 7zz non trouvé dans le bundle, utilisation du nom direct: \(sevenZipPath)")
+            let bundlePath = Bundle.main.bundlePath
+            self.sevenZipPath = bundlePath + "/Contents/Resources/7zz"
+            NSLog("✅ Binaire 7zz cherché dans bundle: \(bundlePath)/Contents/Resources/7zz")
         }
         
         // Vérifier que le binaire existe et est exécutable
