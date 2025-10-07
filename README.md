@@ -1,5 +1,5 @@
 # Mac7zip - Application d'archivage native pour macOS
-*Version 1.0.44 - Application macOS native avec support multi-fenêtres*
+*Version 1.0.76 - Application macOS native avec support multi-fenêtres*
 
 ## 📋 Description
 
@@ -103,7 +103,13 @@ open .build/Mac7zip_latest.app
 
 ## ✅ Corrections Majeures Apportées
 
-### Version 1.0.44 (Actuelle)
+### Version 1.0.76 (Actuelle)
+- ✅ **Menu contextuel fonctionnel** : Clic droit sur les fichiers dans l'archive fonctionne
+- ✅ **Binaires 7-Zip intégrés** : Tous les binaires correctement placés dans Resources/
+- ✅ **Structure DMG optimisée** : DMG avec icône, info.md et alias Applications
+- ✅ **Interface améliorée** : Navigation hiérarchique complète
+
+### Version 1.0.44
 - ✅ **Multi-fenêtres @FocusedBinding** : Raccourcis clavier indépendants par fenêtre
 - ✅ **Architecture Apple native** : Utilisation des meilleures pratiques SwiftUI
 
@@ -127,4 +133,4 @@ open .build/Mac7zip_latest.app
 
 ---
 
-**Mac7zip v1.0.44** - Solution d'archivage native pour macOS 🚀
+**Mac7zip v1.0.76** - Solution d'archivage native pour macOS 🚀
